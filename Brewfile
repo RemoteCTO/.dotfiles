@@ -1,9 +1,6 @@
 # Homebrew Bundle
 # Run: brew bundle --file=~/.dotfiles/Brewfile
 
-# Taps
-tap "homebrew/bundle"
-
 # Version managers
 brew "rbenv"
 brew "ruby-build"
