@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+# ~/.zprofile - Login shell configuration
+# Runs once per login session, before .zshrc
+
+# Homebrew must be in PATH before anything else
+eval "$(/opt/homebrew/bin/brew shellenv)"

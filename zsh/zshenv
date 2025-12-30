@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+# ~/.zshenv - Always sourced (even non-interactive)
+# Keep minimal - runs for every zsh invocation
+
+# Cargo needs to be available everywhere
+[[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"

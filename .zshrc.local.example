@@ -1,0 +1,22 @@
+# ~/.zshrc.local - Machine-specific configuration
+# Copy this to ~/.zshrc.local and fill in your values
+# This file is NOT committed to git
+
+# ============================================================================
+# API Keys
+# ============================================================================
+export LINEAR_API_KEY=""
+export KAMAL_ACCOUNT=""
+
+# ============================================================================
+# Work-specific overrides
+# ============================================================================
+# export WORK_EMAIL="you@company.com"
+
+# ============================================================================
+# Local tool configuration
+# ============================================================================
+# Android development (only on machines with Android Studio)
+# export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
+# export ANDROID_HOME="$HOME/Library/Android/sdk"
+# export NDK_HOME="$ANDROID_HOME/ndk/$(ls -1 $ANDROID_HOME/ndk 2>/dev/null | head -1)"

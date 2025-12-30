@@ -1,0 +1,37 @@
+#!/usr/bin/env zsh
+# ~/.zshrc - Main zsh configuration
+# Managed by ~/.dotfiles - DO NOT add secrets here
+
+# ============================================================================
+# Oh My Zsh
+# ============================================================================
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+
+# ============================================================================
+# Editor
+# ============================================================================
+export VISUAL="code --wait"
+export EDITOR="$VISUAL"
+
+# ============================================================================
+# Modular Configuration
+# ============================================================================
+DOTFILES_ZSH="$HOME/.dotfiles/zsh"
+
+# Load in order: path first, then tools, then aliases
+source "$DOTFILES_ZSH/path.zsh"
+source "$DOTFILES_ZSH/tools/homebrew.zsh"
+source "$DOTFILES_ZSH/tools/rbenv.zsh"
+source "$DOTFILES_ZSH/tools/pyenv.zsh"
+source "$DOTFILES_ZSH/tools/nvm.zsh"
+source "$DOTFILES_ZSH/tools/cargo.zsh"
+source "$DOTFILES_ZSH/tools/completions.zsh"
+source "$DOTFILES_ZSH/aliases.zsh"
+
+# ============================================================================
+# Machine-Specific (secrets, local overrides)
+# ============================================================================
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
